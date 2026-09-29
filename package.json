@@ -1,7 +1,7 @@
 {
-  "name": "hostel-billing-backend",
+  "name": "hostel-billing-system",
   "version": "1.0.0",
-  "description": "Backend API for the Hostel Billing System",
+  "description": "Multi-Hostel Billing Management System",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -10,9 +10,7 @@
   "keywords": [
     "hostel",
     "billing",
-    "management",
-    "express",
-    "mysql"
+    "management"
   ],
   "author": "",
   "license": "ISC",
