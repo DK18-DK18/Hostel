@@ -1,21 +1,30 @@
 {
-  "name": "hostel-billing-frontend",
-  "private": true,
+  "name": "hostel-billing-backend",
   "version": "1.0.0",
-  "type": "module",
+  "description": "Backend API for the Hostel Billing System",
+  "main": "server.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite",
-    "preview": "vite"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
+  "keywords": [
+    "hostel",
+    "billing",
+    "management",
+    "express",
+    "mysql"
+  ],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "axios": "latest",
-    "bootstrap": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-router-dom": "latest",
-    "vite": "latest"
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
