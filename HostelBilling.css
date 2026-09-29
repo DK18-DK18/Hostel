@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+}
+
+/* Main application */
+.app {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+}
+
+/* Main content */
+.main {
+  width: 100%;
+  padding: 72px 55px 50px;
+}
+
+/* Header */
+.header {
+  height: 103px;
+
+  background: #17647f;
+  border: 2px solid #092c3d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: #17647f;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  position: absolute;
+  left: 34px;
+}
+
+.header h1 {
+  color: #ff2020;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+/* Dashboard */
+.dashboard {
+  margin-top: 94px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 42px 27px;
+
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cards */
+.menu-card {
+  height: 103px;
+
+  border: 2px solid #092c3d;
+  background: #17647f;
+
+  padding: 20px 26px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.menu-card:hover {
+  background: #125570;
+  transform: translateY(-3px);
+
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 22px;
+  color: white;
+}
+
+.card-title {
+  color: #ff2020;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+/* Empty card */
+.empty-card {
+  cursor: default;
+}
+
+.empty-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .main {
+    padding: 40px 30px;
+  }
+
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .main {
+    padding: 25px 20px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .header h1 {
+    font-size: 17px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .dashboard {
+    margin-top: 35px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .menu-card {
+    height: 85px;
+  }
+}
